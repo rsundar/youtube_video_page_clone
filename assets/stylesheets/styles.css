@@ -1,11 +1,15 @@
-p { 
-
+p { background: white;
+    font-size: 24px;
+    text-decoration-color: blueviolet;
 }
 div 
 {
+margin: 20px;
+align-self: right;
 
 }
 .menu-bar 
 {
+display: inline-block;
 
 }
