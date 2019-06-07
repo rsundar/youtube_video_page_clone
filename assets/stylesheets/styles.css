@@ -10,6 +10,8 @@ a {
     display: inline-block;
     text-decoration: none;
 }
+
+/* The navigation header section styling*/
 header .fa, .fas{
     color:black;
 }
@@ -61,6 +63,7 @@ header .logo {
     padding-left: 8px;
     padding-right: 8px;
     margin-right: auto;
+    margin-left: 10px;
 }
 
 header .logo-icon {
@@ -82,8 +85,9 @@ header .logo h1 {
 header .search-form {
     display: flex;
     height: 32px;
-    width: 500px;
+    width: 600px;
     margin-right: auto;
+    margin-left: auto;
 }
 
 header .search-input, .search-button {
@@ -131,3 +135,5 @@ header .user-menu #header-button{
     margin-right: 30px;
     margin-left: 30px;
 }
+
+/*Body container styling*/
