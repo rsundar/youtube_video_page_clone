@@ -155,7 +155,7 @@ body .main-container {
 
 body .main-container #video-container {
     width: 730px;
-    height: 430px;
+    height: 470px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
@@ -167,6 +167,7 @@ body .info h1 {
     color: black;
     font-family: "Roboto", sans-serif, Arial;
     letter-spacing: -1px;
+    font-weight: 400;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
@@ -191,6 +192,8 @@ body .info-icons {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 body .info-bar h2{
@@ -200,6 +203,7 @@ body .info-bar h2{
     height: 50px;
     width: 150px;
     letter-spacing: -2px;
+    font-weight: 300;
     padding-right: 2px;
     padding-left: 2px;
     padding-bottom: 2px;
