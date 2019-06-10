@@ -217,3 +217,19 @@ body .info-bar h2{
     margin-left: auto;
     margin-right: auto;
 }*/
+.sidecontent
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.chan
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+img{
+    padding: 10px 10px 10px 10px;
+}
