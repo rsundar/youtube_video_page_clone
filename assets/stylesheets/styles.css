@@ -358,7 +358,26 @@ float: right;
     float:right;
     margin-top: -25px;
 }
-
+.cancel-btn {
+    background: none;
+    border: none;
+    font-family: "Roboto";
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.comment-btn {
+    background: grey;
+    border: none;
+    border-radius: 3px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 /* Sidebar styling*/
 .sidebar-container {
     height: 100%;
