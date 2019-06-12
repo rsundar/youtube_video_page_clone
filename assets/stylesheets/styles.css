@@ -349,10 +349,16 @@ height:55px;
 padding-top:5px;
 display: inline-block;
 }
-.comment-form-container .comment-input-form input[type=text]{
+.comment-form-container .comment-input-form #comment-input-id{
 padding-bottom: 15px;
 size: 70%;
+float: right;
 }
+.comment-btns {
+    float:right;
+    margin-top: -25px;
+}
+
 /* Sidebar styling*/
 .sidebar-container {
     height: 100%;
