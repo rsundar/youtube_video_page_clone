@@ -321,9 +321,37 @@ body .info-bar h2{
 }
 /* Comment section styling*/
 
+
 .comment-container { 
     /*This is the main comment container be careful overhere or we may end up breaking the project.*/
     width: 740px;
+}
+.comment-header {
+width: 740px;
+height: 40px;
+display: flex;
+flex-direction: row;
+padding-top:10px;
+justify-content: flex-start;
+}
+.comment-header .sort-icon{
+    padding-left:10px;
+    
+}
+#comment-number{
+font-size: 15px;
+padding-top: 0px;
+margin-top:0px;
+}
+.comment-form-container{
+width:740px;
+height:55px;
+padding-top:5px;
+display: inline-block;
+}
+.comment-form-container .comment-input-form input[type=text]{
+padding-bottom: 15px;
+size: 70%;
 }
 /* Sidebar styling*/
 .sidebar-container {
