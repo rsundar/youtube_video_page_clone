@@ -392,6 +392,11 @@ float: right;
 	margin-left: 0px;
 }
 
+.comment-avatar #avatar-img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
 .public-comment-container {
 	position: relative;
 	bottom: 115%;
