@@ -378,6 +378,45 @@ float: right;
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.comment-body-container {
+	width:740px;
+	height: 85px;
+    margin-top: 10px;
+}
+
+.comment-avatar {
+	width: 10%;
+	height: 100%;
+	margin-left: 0px;
+}
+
+.public-comment-container {
+	position: relative;
+	bottom: 115%;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	padding-left: 60px;
+}
+
+.public-comment-container .comment-user-name {
+	margin: 0px;
+	font-size:15px;
+}
+
+.comment-user-name #comment-created-date {
+	font-size: 10px;
+	color: #a4a4a5;
+}
+
+.public-comment-container #comment-reply-btn {
+	background: none;
+	border: none;
+	color: #a4a4a5;
+	cursor: pointer;
+}
+
 /* Sidebar styling*/
 .sidebar-container {
     height: 100%;
