@@ -138,7 +138,9 @@ header .user-menu #header-button{
 }
 
 /*Body container styling*/
+
 /* Main container styling*/
+/* Video Container & Video Information box styling*/
 
 body .container {
     display: flex;
@@ -155,7 +157,7 @@ body .main-container {
 
 body .main-container #video-container {
     width: 730px;
-    height: 430px;
+    height: 470px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
@@ -167,6 +169,7 @@ body .info h1 {
     color: black;
     font-family: "Roboto", sans-serif, Arial;
     letter-spacing: -1px;
+    font-weight: 400;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
@@ -180,8 +183,9 @@ body .info h1 {
 body .info-bar {
     display: flex;
     justify-content: space-between;
-    width: 720px;
+    width: 740px;
     height: 50px;
+    border-bottom: 1px solid #a4a4a5;
 }
 
 body .info-icons {
@@ -191,6 +195,8 @@ body .info-icons {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 body .info-bar h2{
@@ -200,6 +206,7 @@ body .info-bar h2{
     height: 50px;
     width: 150px;
     letter-spacing: -2px;
+    font-weight: 300;
     padding-right: 2px;
     padding-left: 2px;
     padding-bottom: 2px;
@@ -210,26 +217,269 @@ body .info-bar h2{
     margin-bottom: 2px;
 }
 
-/*body .info-icons p {
+.thumbs-up,.thumbs-down,.share,.save {
+    color: #a4a4a5;
+    font-family: "Roboto", sans-serif, Arial;
     font-size: 18px;
-    color: #212321;
-    font-family: "Roboto";
+    
+}
+
+.thumbs-up,.thumbs-down{
+    margin-left: 2px;
+    margin-right: 5px;
+}
+
+.share,.save {
+    margin-left: 4px;
+    margin-right: 8px;
+}
+
+.video-icons {
+    display: inline-block;
+    position: relative;
+    margin-right: 2px;
+}
+
+/* Subscription and Channel Information section Styling */
+
+.channel-subscription-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 150px;
+    border-bottom: 2px solid #a4a4a5;
+}
+
+.channel-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 35%;
+    margin-top: 5px;
+}
+
+.avatar-image {
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.publish-info {
+    display:inline-block;
+    margin-left: 2px;
+    width: 50%;
+    line-height: 0.01em;
+    margin-top: -12px;
+}
+
+.channel-body{
+    display: inline-block;
+    position: relative;
+    padding-left: 52px;
+    width: 30%;
+    height: 40%;
+}
+
+.subscription-btn-container {
+    width: 20%;
     margin-left: auto;
-    margin-right: auto;
-}*/
-.sidecontent
+}
+
+.subscribe-btn {
+    border-radius: 4px;
+    border: none;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size: 15px;
+    background: #e61515;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.subscription-btn-container .subscribe-btn span {
+    padding-left: 3px;
+}
+
+.show-more-button {
+    background: none;
+    border: none;
+    color: #a4a4a5;
+    font-family: "Roboto";
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.channel-description {
+    font-size: 12px;
+    font-family: "Roboto";
+    width: 150%;
+}
+/* Comment section styling*/
+
+
+.comment-container { 
+    /*This is the main comment container be careful overhere or we may end up breaking the project.*/
+    width: 740px;
+}
+.comment-header {
+width: 740px;
+height: 40px;
+display: flex;
+flex-direction: row;
+padding-top:10px;
+justify-content: flex-start;
+}
+.comment-header .sort-icon{
+    padding-left:10px;
+    
+}
+#comment-number{
+font-size: 15px;
+padding-top: 0px;
+margin-top:0px;
+}
+.comment-form-container{
+width:740px;
+height:55px;
+padding-top:5px;
+display: inline-block;
+}
+.comment-form-container .comment-input-form #comment-input-id{
+padding-bottom: 15px;
+size: 70%;
+float: right;
+}
+.comment-btns {
+    float:right;
+    margin-top: -25px;
+}
+.cancel-btn {
+    background: none;
+    border: none;
+    font-family: "Roboto";
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.comment-btn {
+    background: grey;
+    border: none;
+    border-radius: 3px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.comment-body-container {
+	width:740px;
+	height: 85px;
+    margin-top: 10px;
+}
+
+.comment-avatar {
+	width: 10%;
+	height: 100%;
+	margin-left: 0px;
+}
+
+.comment-avatar #avatar-img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.public-comment-container {
+	position: relative;
+	bottom: 115%;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	padding-left: 60px;
+}
+
+.public-comment-container .comment-user-name {
+	margin: 0px;
+	font-size:15px;
+}
+
+.comment-user-name #comment-created-date {
+	font-size: 10px;
+	color: #a4a4a5;
+}
+
+.public-comment-container #comment-reply-btn {
+	background: none;
+	border: none;
+	color: #a4a4a5;
+	cursor: pointer;
+}
+
+/* Sidebar styling*/
+.sidebar-container {
+    height: 100%;
+    width:30%;
+
+}
+.sidebar-content
 {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: space-between;
-}
-.chan
-{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    padding: 4px 4px 4px 4px;
+
 }
 img{
-    padding: 10px 10px 10px 10px;
+    /*padding-top: 5px;*/
+    padding-bottom: 5px;
+}
+#first-element
+{
+    height:110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom:1px double black;
+}
+.element-content{
+    height: 110px;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; 
+    margin-top: -15px;
+    
+}
+
+.element-content h4{
+    float: right;
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+.channel-name{
+    float:left;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.recommended{
+    float: right;
+    font-size: 12px;
+    margin-bottom: 3px;
+
+}
+.sidebar-element{
+    height:110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+
 }

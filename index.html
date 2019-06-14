@@ -4,6 +4,7 @@
       <link href="assets/stylesheets/styles.css" type="text/css" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       <meta charset="utf-8">
       <title>Youtube</title>
   </head>
@@ -33,7 +34,8 @@
       <div class="container">
           <div class="main-container">
               <div id="video-container">
-                <iframe width="746px" height="420px" left="0px" right="0px" top="0px" src="https://www.youtube.com/embed/v=ZnuwB35GYMY"></iframe>
+                <iframe width="100%" height="470px" src="https://www.youtube.com/embed/ZnuwB35GYMY" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="info">
                 <h1>How To Embed A YouTube Video</h1>
@@ -41,32 +43,178 @@
               <div class="info-bar">
                 <h2>221,038 views</h2>
                 <div id="info-icons">
-                  <a title="I like this" href="#" ><i class="fas fa-thumbs-up">  583</i></a>
-                  <a title="I dislike this" href="#"><i class="fas fa-thumbs-down">  27</i></a>
-                  <a title="Share" href="#"><i class="fas fa-share">  SHARE</i></a>
-                  <a  href="#"><i class="far fa-list-alt">  SAVE</i></a>
-                  <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                  <a title="I like this" class="video-icons" href="#" ><i class="material-icons" style="font-size:18px;color:#a4a4a5">thumb_up</i><span class="thumbs-up">583</span></a>
+                  <a title="I dislike this" class="video-icons" href="#"><i class="material-icons" style="font-size:18px;color:#a4a4a5">thumb_down</i><span class="thumbs-down">27</span></a>
+                  <a title="Share" class="video-icons" href="#"><i class="material-icons" style="font-size:18px;color:#a4a4a5">reply</i><span class="share">SHARE</span></a>
+                  <a class="video-icons" href="#"><i class="material-icons" style="font-size:18px;color:#a4a4a5">playlist_add</i><span class="save">SAVE</span></a>
+                  <a href="#"><i class="material-icons" style="font-size:18px;color:#a4a4a5">more_horiz</i></a>
                 </div>
               </div>
-          </div>
-          <div class="sidebar-container">
-
-          
-                  <div class="sidecontent">
-                    <img src="assets/images/video1.png" width="375px" height="78" alt="">
-                    <img src="assets/images/video2.png" width="375px" height="78" alt="">
-                    <img src="assets/images/video3.png" width="375px" height="78" alt="">
-                    <img src="assets/images/video4.png" width="375px" height="78" alt="">
-                    <img src="assets/images/video1.png" width="375px" height="78" alt="">
-                    <img src="assets/images/video2.png" width="375px" height="78" alt="">
-                    <img src="assets/images/video3.png" width="375px" height="78" alt="">
-                    <img src="assets/images/video4.png" alt="">
-                    
+              <div class="channel-subscription-container">
+                <div class="channel-header">
+                  <img class="avatar-image" src="assets/images/avatar.png" alt=""></img>
+                  <div class="publish-info">
+                    <h4 class="username">TechGuru</h4>
+                    <h6 class="published-date">Published on 27/09/2019</h6>
                   </div>
-                  <div class="chan">
-                    <img src="assets/images/channel.png" alt="">
-                    
-                  </div class="chan">
-        
-  </body>
+                  <div class="subscription-btn-container">
+                    <a href="#"><button class="subscribe-btn">SUBSCRIBE <span>2.6K</span></button></a>
+                  </div>
+                </div>
+                <div class="channel-body">
+                  <p class="channel-description">This completes the 134-part JavaScript tutorial for beginners. Share, Like and Subscribe for more content.</p>
+                  <a href="#"><button class="show-more-button">SHOW MORE</button></a>             
+                </div>
+              </div>
+              <div class="comment-container">
+                <div class="comment-header">
+                  <h2 id="comment-number">1,919 Comments</h2>
+                  <a class="sort-icon" href="#"><i class="material-icons" style="font-size: 15px; color:#a4a4a5">sort</i><span>SORT BY</span></a>
+                </div>
+                <div class="comment-form-containter">
+                  <i class="material-icons" style="font-size: 45px; color:red">account_circle</i>
+                  <input type="text" placeholder="Add a public comment" size="95%" style="border:none;border-bottom: 1px solid black;margin-bottom:0px;float:right" class="comment-input-form"/>
+                  <div class="comment-btns">
+                    <a href="#"><button class="cancel-btn" >CANCEL</button></a>
+                    <a href="#"><button class="comment-btn">COMMENT</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-body-container">
+                  <div class="comment-avatar">
+                    <i class="material-icons" style="font-size: 45px; color: blue">account_circle</i>
+                  </div>
+                  <ul class="public-comment-container">
+                    <li><h6 class="comment-user-name">Sam Witwicki <span id="comment-created-date">6 months ago</span></h6></li>
+                    <li><p class="public-comment">This is a great video! Subscribed!</p></li>
+                    <li><i class="material-icons" style="font-size: 12px; color: #a4a4a5; margin-right: 5px">thumb_up</i>
+                      <i class="material-icons" style="font-size: 12px; color: #a4a4a5; margin-right: 5px">thumb_down</i>
+                      <button id="comment-reply-btn">REPLY</button></li>
+                  </ul>
+              </div>
+              <div class="comment-body-container">
+                  <div class="comment-avatar">
+                    <img id="avatar-img" src="assets/images/comment-avatar.jpg" alt=""></img>
+                  </div>
+                  <ul class="public-comment-container">
+                    <li><h6 class="comment-user-name">Some Random Guy <span id="comment-created-date">3 months ago</span></h6></li>
+                    <li><p class="public-comment">Great javascript tutorial cleared up a lot issues I was having. Would definitely subscribe</p></li>
+                    <li><i class="material-icons" style="font-size: 12px; color: #a4a4a5; margin-right: 5px">thumb_up</i>
+                      <i class="material-icons" style="font-size: 12px; color: #a4a4a5; margin-right: 5px">thumb_down</i>
+                      <button id="comment-reply-btn">REPLY</button></li>
+                  </ul>
+              </div>
+              <div class="comment-body-container">
+                  <div class="comment-avatar">
+                    <i class="material-icons" style="font-size: 45px; color: green">account_circle</i>
+                  </div>
+                  <ul class="public-comment-container">
+                    <li><h6 class="comment-user-name">Mikaela Banes <span id="comment-created-date">6 months ago</span></h6></li>
+                    <li><p class="public-comment">Awesome, loving this channel!</p></li>
+                    <li><i class="material-icons" style="font-size: 12px; color: #a4a4a5; margin-right: 5px">thumb_up</i>
+                      <i class="material-icons" style="font-size: 12px; color: #a4a4a5; margin-right: 5px">thumb_down</i>
+                      <button id="comment-reply-btn">REPLY</button></li>
+                  </ul>
+              </div>
+              <div class="comment-body-container">
+                  <div class="comment-avatar">
+                    <i class="material-icons" style="font-size: 45px; color: red">account_circle</i>
+                  </div>
+                  <ul class="public-comment-container">
+                    <li><h6 class="comment-user-name">Optimus Prime <span id="comment-created-date">1 month ago</span></h6></li>
+                    <li><p class="public-comment">This is the truth about the all spark! Pay heed earthlings!</p></li>
+                    <li><i class="material-icons" style="font-size: 12px; color: #a4a4a5; margin-right: 5px">thumb_up</i>
+                      <i class="material-icons" style="font-size: 12px; color: #a4a4a5; margin-right: 5px">thumb_down</i>
+                      <button id="comment-reply-btn">REPLY</button></li>
+                  </ul>
+              </div>
+              <div class="comment-body-container">
+                  <div class="comment-avatar">
+                    <i class="material-icons" style="font-size: 45px; color: grey">account_circle</i>
+                  </div>
+                  <ul class="public-comment-container">
+                    <li><h6 class="comment-user-name">Megatron <span id="comment-created-date">1 month ago</span></h6></li>
+                    <li><p class="public-comment">Optimus Prime lies!!! Listen to me humans hand over the all spark,</p></li>
+                    <li><i class="material-icons" style="font-size: 12px; color: #a4a4a5; margin-right: 5px">thumb_up</i>
+                      <i class="material-icons" style="font-size: 12px; color: #a4a4a5; margin-right: 5px">thumb_down</i>
+                      <button id="comment-reply-btn">REPLY</button></li>
+                  </ul>
+              </div>
+          </div>
+        <div class="sidebar-container">
+          <div class="sidebar-content">
+            <div id="first-element">
+              <img class="thumbnail" src="assets/images/video1.png" alt=""></img>
+                <div class="element-content">
+                  <a href="#"><h4>How to download facebook videos</h4>
+                    <p class="channel-name">Tech Geek</p>
+                  </a>  
+                
+                  <p class="recommended">Recommended for you</p>
+                </div>
+                
+            </div>  
+            <div class="sidebar-element">
+              <img class="thumbnail" src="assets/images/video2.png" alt=""></img>
+                <div class="element-content">
+                  <a href="#"><h4 >How to insert multiple image in microsft office access</h4>
+                    <p id="channel-name">Zomby apocalypse</p>
+                  </a> 
+                  <p class="recommended">Recommended for you</p>
+                </div>
+                
+            </div>  
+            <div class="sidebar-element">
+              <img class="thumbnail" src="assets/images/video3.png" alt=""></img>
+                <div class="element-content">
+                  <a href="#"><h4>The amazing football match since 2000</h4>
+                    <p id="channel-name">Sport hero</p>
+                  </a>
+                    <p>Recommended for you</p>
+                </div>
+              
+            </div>  
+            <!--<div class="sidebar-element">
+              <img class="thumbnail" src="assets/images/video4.png" alt=""></img>
+                <div class="element-content">
+                  <a href="#"><h4>How to download facebook videos</h4>
+                    <p id="channel-name">Tech Geek</p>
+                  </a> 
+                   <p class="recommended">Recommended for you</p>
+                  
+                </div>
+            </div>-->  
+            <div class="sidebar-element">
+              <img class="thumbnail" src="assets/images/video1.png" alt=""></img>
+                <div class="element-content">
+                  <a href="#"><h4>How to download facebook videos</h4>
+                    <p id="channel-name">Tech Geek</p>
+                  </a> 
+                   <p class="recommended">Recommended for you</p>
+                </div>
+            </div>  
+            <div class="sidebar-element">
+              <img class="thumbnail" src="assets/images/video2.png" alt=""></img>
+                <div class="element-content">
+                  <a href="#"><h4>How to download facebook videos</h4>
+                    <p id="channel-name">Tech Geek</p>
+                  </a> 
+                   <p class="recommended">Recommended for you</p>
+                  
+                </div>
+            </div>  
+            </div>  
+            <div class="sidebar-element">
+                <img class="thumbnail" src="assets/images/video2.png" alt=""></img>
+                  <div class="element-content">
+                    <a href="#"><h4>How to download facebook videos</h4>
+                      <p id="channel-name">Tech Geek</p>
+                    </a> 
+                     <p class="recommended">Recommended for you</p>  
+                  </div>    
+              </div> 
+            </div>
+      </div>
+</div>                 
+</body>
 </html>
